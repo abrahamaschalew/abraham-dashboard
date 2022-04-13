@@ -1,0 +1,24 @@
+<h2>Upload Documents</h2>
+<form class="example-form">
+  <mat-form-field appearance="fill">
+    <mat-label>What type of file?</mat-label>
+    <mat-select [(value)]="selectedOption">
+      <mat-option
+        *ngFor="let option of categorys"
+        [value]="option.categoryPostUrl"
+        >{{ option.value }}</mat-option
+      >
+    </mat-select>
+  </mat-form-field>
+
+  <app-core-upload></app-core-upload>
+</form>
+<button
+  (click)="upload()"
+  mat-raised-button
+  color="primary"
+  style="float: right; margin-top: 2rem"
+>
+  Push/ Upload
+</button>
+<br /><br />

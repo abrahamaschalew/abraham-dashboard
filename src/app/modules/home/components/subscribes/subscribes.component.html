@@ -1,0 +1,25 @@
+<h2>Newsletter Subscribes</h2>
+
+<mat-selection-list #shoes [multiple]="false">
+  <mat-list-option
+    *ngFor="let subscriber of subscribers"
+    [value]="subscriber.name"
+  >
+    <ul>
+      <li>
+        {{ subscriber.name }}
+      </li>
+      <li class="second">
+        {{ subscriber.email }}
+      </li>
+    </ul>
+  </mat-list-option>
+</mat-selection-list>
+
+<button
+  mat-raised-button
+  color="primary"
+  style="float: right; margin-top: 2rem"
+>
+  Download E-Mail List as a json
+</button>

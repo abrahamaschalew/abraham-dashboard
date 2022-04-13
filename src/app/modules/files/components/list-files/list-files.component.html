@@ -1,0 +1,27 @@
+<mat-list class="scrollable">
+  <div mat-subheader>Files</div>
+  <mat-list-item *ngFor="let note of notes; let i = index">
+    <mat-icon mat-list-icon>note</mat-icon>
+    <div mat-line>{{ note.name }}</div>
+    <div mat-line>{{ note.updated | date }}</div>
+    <div style="float: right">
+      <a mat-button href="https://www.google.com/" target="_blank"
+        >Go To the file</a
+      >
+      <mat-checkbox
+        class="example-margin"
+        [(ngModel)]="note.checked"
+        color="primary"
+      ></mat-checkbox>
+    </div>
+  </mat-list-item>
+</mat-list>
+
+<button
+  mat-fab
+  color="warn"
+  aria-label="Example icon button with a delete icon"
+  style="float: right; margin-top: 2rem"
+>
+  <mat-icon>delete</mat-icon>
+</button>
