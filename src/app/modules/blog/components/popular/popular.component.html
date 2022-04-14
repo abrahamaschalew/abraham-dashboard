@@ -1,0 +1,14 @@
+<h2 style="margin-top: 2rem">Popular Blogs</h2>
+
+<ul class="list-group list-group-flush">
+  <li class="list-group-item" *ngFor="let popular of populars">
+    {{ popular.title }}
+    <a
+      mat-button
+      target="_blank"
+      href="{{ popular.url }}"
+      style="float: right; margin: auto 0"
+      >Link To Blog Post</a
+    >
+  </li>
+</ul>

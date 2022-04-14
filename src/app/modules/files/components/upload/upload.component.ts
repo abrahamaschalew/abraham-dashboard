@@ -14,7 +14,7 @@ interface FileCategory {
 export class UploadComponent implements OnInit {
   categorys: FileCategory[] = [
     { value: 'Document For Serving', categoryPostUrl: '/upload/doc' },
-    { value: 'HTML Blog Post', categoryPostUrl: '/blog/post/html' },
+    { value: 'Images', categoryPostUrl: '/upload/image' },
   ];
   selectedOption = this.categorys[0].categoryPostUrl;
 

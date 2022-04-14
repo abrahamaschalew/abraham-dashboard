@@ -1,0 +1,22 @@
+<h2>Post Blog</h2>
+<form class="example-form">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Blog Title</mat-label>
+    <input type="text" matInput />
+    <mat-hint>The page title</mat-hint>
+    <mat-error *ngIf="false"> Please enter a valid email address </mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Blog url blog/</mat-label>
+    <input type="text" matInput />
+    <mat-hint>What will be the url</mat-hint>
+    <mat-error *ngIf="false"> Please enter a valid url address </mat-error>
+  </mat-form-field>
+
+  <app-core-upload
+    palceholder="Drop HTML Blog Post File here!"
+  ></app-core-upload>
+
+  <button mat-raised-button color="primary">Post Blog</button>
+</form>

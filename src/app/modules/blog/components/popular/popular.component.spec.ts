@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ContactMessagesComponent } from './contact-messages.component';
+import { PopularComponent } from './popular.component';
 
-describe('ContactMessagesComponent', () => {
-  let component: ContactMessagesComponent;
-  let fixture: ComponentFixture<ContactMessagesComponent>;
+describe('PopularComponent', () => {
+  let component: PopularComponent;
+  let fixture: ComponentFixture<PopularComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ContactMessagesComponent ]
+      declarations: [ PopularComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ContactMessagesComponent);
+    fixture = TestBed.createComponent(PopularComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

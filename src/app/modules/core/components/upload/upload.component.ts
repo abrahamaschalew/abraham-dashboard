@@ -7,6 +7,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class UploadComponent implements OnInit {
   @Input() directory: string = '';
+  @Input() palceholder: string = 'Drop Files here!';
+
   constructor(private http: HttpClient) {}
 
   files: File[] = [];

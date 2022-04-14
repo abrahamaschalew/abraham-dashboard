@@ -1,0 +1,9 @@
+.popular {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.popular a {
+  margin-right: auto;
+}

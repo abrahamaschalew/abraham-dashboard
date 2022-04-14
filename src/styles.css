@@ -13,8 +13,8 @@ a {
   text-decoration: none !important;
 }
 
-.container {
-  margin: 3rem auto !important;
+.container-fluid {
+  margin: 3rem 2rem !important;
 }
 
 .scrollable {

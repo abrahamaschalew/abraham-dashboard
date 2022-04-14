@@ -1,6 +1,6 @@
 <form class="example-form">
   <ngx-dropzone (change)="onSelect($event)">
-    <ngx-dropzone-label>Drop files here!</ngx-dropzone-label>
+    <ngx-dropzone-label>{{ palceholder }}</ngx-dropzone-label>
     <ngx-dropzone-preview
       *ngFor="let f of files"
       [removable]="true"
